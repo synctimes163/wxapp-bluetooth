@@ -1,0 +1,16 @@
+<view class="page" data-weui-theme="{{theme}}">
+	<view class="page__hd">
+		<view class="page__title">Panel</view>
+		<view class="page__desc">面板</view>
+	</view>
+	<view class="page__bd">
+		<view class="weui-cells weui-cells_after-title">
+			<block wx:for="{{ dataList }}">
+				<view class="weui-cell weui-cell_access" bindtap="openLock" data-item="{{ item }}">
+					<view class="weui-cell__bd">{{ item.btName }}</view>
+					<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+				</view>
+			</block>
+		</view>
+	</view>
+</view>
